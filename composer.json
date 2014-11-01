@@ -1,0 +1,19 @@
+{
+  "name": "devedge/xmlrpc-example",
+  "description": "Just an example for the devedge/xmlrpc packages",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Peter Petermann",
+      "email": "ppetermann80@googlemail.com"
+    }
+  ],
+  "require": {
+    "devedge/xmlrpc-server": "dev-master",
+    "devedge/xmlrpc-client": "dev-master"
+  },
+  "autoload": {
+      "psr-4": { "Devedge\\": "src/Devedge/" }
+  }
+}

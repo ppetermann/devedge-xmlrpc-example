@@ -1,0 +1,426 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "e4b5b3548ebf684e4ec43c60999c6795",
+    "packages": [
+        {
+            "name": "devedge/stubs",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ppetermann/devedge-stubs.git",
+                "reference": "044b874e1c4526fa3a6705d7074bd7a6ffe12d05"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ppetermann/devedge-stubs/zipball/044b874e1c4526fa3a6705d7074bd7a6ffe12d05",
+                "reference": "044b874e1c4526fa3a6705d7074bd7a6ffe12d05",
+                "shasum": ""
+            },
+            "require": {
+                "psr/log": "1.0.0"
+            },
+            "provide": {
+                "psr/cache-implementation": "1.0.0",
+                "psr/log-implementation": "1.0.0"
+            },
+            "replace": {
+                "psr/cache": "1.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Devedge\\": "src/Devedge/",
+                    "Psr\\": "src/Psr/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Peter Petermann",
+                    "email": "ppetermann80@googlemail.com"
+                }
+            ],
+            "description": "A PHP Library that contains Null-Implementations for various PSRs",
+            "time": "2014-09-27 14:45:27"
+        },
+        {
+            "name": "devedge/xmlrpc-client",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ppetermann/devedge-xmlrpc-client.git",
+                "reference": "79e838b68f3fac321614f74f6605d48b4b44251a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ppetermann/devedge-xmlrpc-client/zipball/79e838b68f3fac321614f74f6605d48b4b44251a",
+                "reference": "79e838b68f3fac321614f74f6605d48b4b44251a",
+                "shasum": ""
+            },
+            "require": {
+                "devedge/stubs": "1.0.*",
+                "devedge/xmlrpc-common": "~0.2",
+                "guzzlehttp/guzzle": "~5.0",
+                "psr/cache": "1.0.0",
+                "psr/log": "1.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Devedge\\": "src/Devedge/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Peter Petermann",
+                    "email": "ppetermann80@googlemail.com"
+                }
+            ],
+            "description": "A PHP Library to use XML-RPC servers",
+            "time": "2014-11-01 21:06:17"
+        },
+        {
+            "name": "devedge/xmlrpc-common",
+            "version": "0.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ppetermann/devedge-xmlrpc-common.git",
+                "reference": "5089a75b788a2e4ce45a9541fb01db2bcd6ad8f2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ppetermann/devedge-xmlrpc-common/zipball/5089a75b788a2e4ce45a9541fb01db2bcd6ad8f2",
+                "reference": "5089a75b788a2e4ce45a9541fb01db2bcd6ad8f2",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Devedge\\": "src/Devedge/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Peter Petermann",
+                    "email": "ppetermann80@googlemail.com"
+                }
+            ],
+            "description": "lib to be used by devedge/xmlrpc-server and devedge/xmlrpc-client",
+            "time": "2014-09-27 15:00:33"
+        },
+        {
+            "name": "devedge/xmlrpc-server",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ppetermann/devedge-xmlrpc-server.git",
+                "reference": "a41d50f532ddac5975087fc27a71f55cd004cf68"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ppetermann/devedge-xmlrpc-server/zipball/a41d50f532ddac5975087fc27a71f55cd004cf68",
+                "reference": "a41d50f532ddac5975087fc27a71f55cd004cf68",
+                "shasum": ""
+            },
+            "require": {
+                "devedge/stubs": "1.0.*",
+                "devedge/xmlrpc-common": "0.2.*",
+                "psr/cache": "1.0.0",
+                "psr/log": "1.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Devedge\\": "src/Devedge/",
+                    "Psr\\": "src/Psr/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Peter Petermann",
+                    "email": "ppetermann80@googlemail.com"
+                }
+            ],
+            "description": "A PHP Library to create XML-RPC Servers",
+            "time": "2014-11-01 22:00:12"
+        },
+        {
+            "name": "guzzlehttp/guzzle",
+            "version": "5.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/guzzle.git",
+                "reference": "90b5b961dba11f5a1612eeb6fbd59c227112f763"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/90b5b961dba11f5a1612eeb6fbd59c227112f763",
+                "reference": "90b5b961dba11f5a1612eeb6fbd59c227112f763",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/ringphp": "~1.0",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "ext-curl": "*",
+                "phpunit/phpunit": "~4.0",
+                "psr/log": "~1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Guzzle is a PHP HTTP client library and framework for building RESTful web service clients",
+            "homepage": "http://guzzlephp.org/",
+            "keywords": [
+                "client",
+                "curl",
+                "framework",
+                "http",
+                "http client",
+                "rest",
+                "web service"
+            ],
+            "time": "2014-10-31 03:26:57"
+        },
+        {
+            "name": "guzzlehttp/ringphp",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/RingPHP.git",
+                "reference": "86df4c0ea5459b292ff8c519f8db1513ea41ca9b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/RingPHP/zipball/86df4c0ea5459b292ff8c519f8db1513ea41ca9b",
+                "reference": "86df4c0ea5459b292ff8c519f8db1513ea41ca9b",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/streams": "~3.0",
+                "php": ">=5.4.0",
+                "react/promise": "~2.0"
+            },
+            "require-dev": {
+                "ext-curl": "*",
+                "phpunit/phpunit": "~4.0"
+            },
+            "suggest": {
+                "ext-curl": "Guzzle will use specific adapters if cURL is present"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Ring\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "time": "2014-10-29 02:00:14"
+        },
+        {
+            "name": "guzzlehttp/streams",
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/streams.git",
+                "reference": "47aaa48e27dae43d39fc1cea0ccf0d84ac1a2ba5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/streams/zipball/47aaa48e27dae43d39fc1cea0ccf0d84ac1a2ba5",
+                "reference": "47aaa48e27dae43d39fc1cea0ccf0d84ac1a2ba5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Stream\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Provides a simple abstraction over streams of data",
+            "homepage": "http://guzzlephp.org/",
+            "keywords": [
+                "Guzzle",
+                "stream"
+            ],
+            "time": "2014-10-12 19:18:40"
+        },
+        {
+            "name": "psr/log",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/fe0936ee26643249e916849d48e3a51d5f5e278b",
+                "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Psr\\Log\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "time": "2012-12-21 11:40:51"
+        },
+        {
+            "name": "react/promise",
+            "version": "v2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/reactphp/promise.git",
+                "reference": "937b04f1b0ee8f6d180e75a0830aac778ca4bcd6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/reactphp/promise/zipball/937b04f1b0ee8f6d180e75a0830aac778ca4bcd6",
+                "reference": "937b04f1b0ee8f6d180e75a0830aac778ca4bcd6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "React\\Promise\\": "src/"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Sorgalla",
+                    "email": "jsorgalla@googlemail.com"
+                }
+            ],
+            "description": "A lightweight implementation of CommonJS Promises/A for PHP",
+            "time": "2014-10-15 20:05:57"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "devedge/xmlrpc-server": 20,
+        "devedge/xmlrpc-client": 20
+    },
+    "prefer-stable": false,
+    "platform": [],
+    "platform-dev": []
+}
