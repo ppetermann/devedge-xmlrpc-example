@@ -8,7 +8,13 @@ $client = new \Devedge\XmlRpc\Client("http://localhost:8100/server.php", 'exampl
 
 
 // hello world! (default param1)
-var_dump($client->invokeRpcCall("sayHello",[]));
+echo $client->invokeRpcCall("sayHello",[]) . "\n";
 
 // hello user! (first param == user)
-var_dump($client->invokeRpcCall("sayHello",["user"]));
+echo $client->invokeRpcCall("sayHello",["user"]) . "\n";
+
+try {
+    $client->invokeRpcCall("throwException");
+} catch (\Devedge\XmlRpc\Client\RemoteException $e) {
+    echo "caught exception: (" . $e->getMessage() .")\n";
+}
